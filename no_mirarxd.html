@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            background-color: palevioletred;
+            margin-left: 165px;
+        }
+
+        @keyframes abrir {
+            0%{
+                background: white ;
+                transform: rotateY(0deg);
+                color: white;
+            }
+            45%{
+                background: white;
+                color:white;
+            }
+            50% {
+                background: white;
+                color: black;
+              
+            }
+            100%{
+                background: white;
+                transform: rotateY(-180deg);
+                color: black; 
+            }
+
+        }
+
+        .abierta{
+            animation: abrir 4s linear 0.3s forwards;
+
+        }
+       
+        .tarjeta{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 500px;
+            position: relative;
+
+        }
+
+        .tapa, .pagina{
+            border: 1px solid gray;
+            box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.26);
+            height: 200px;
+            transform-origin: left;
+            width: 190px;
+        }
+
+        .tapa{
+            background: white;
+            left: 0;
+            position: absolute;
+            top: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            line-height: 160px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tapa p{
+            transform: scaleX(-1);
+        }
+
+        .pagina{
+            align-items: end ;
+            display: flex;
+            justify-content: center;
+            background-image: url(https://rvideos1.memedroid.com/videos/UPLOADED118/633db081d79e7.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Impact ;
+            color: white;
+            font-weight: 500;  
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="tarjeta">
+        <div class="tapa" onclick="abrirTapa(this)"> 
+            <p> Para ti bb </p>
+        </div>
+        <div class="pagina">
+            <p>Una flor para otra flor</p>
+        </div>
+
+    </div>
+
+    <script>
+        function abrirTapa(tapa){
+            tapa.classList.add('abierta');
+        }
+    </script>
+</body>
+</html>
