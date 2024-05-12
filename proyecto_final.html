@@ -29,7 +29,6 @@
             display: flex;
             width: 90vw;
             height: 100px;
-            background-color: ;
             align-items: baseline;
             margin: auto;
             align-items: center;
@@ -38,12 +37,14 @@
         
         .bar{
             display: flex;
-            width: 50vw;
+            width: 25em;
             margin: 10px auto;
             justify-content: space-between;
             font-family: 'Quicksand';
             font-weight: bold;
             color: #452e28;
+            font-size: 20px;
+            padding: 0px 30px;
         }
         .sign_up{
 
@@ -59,6 +60,7 @@
             cursor: pointer;
             border-radius: 15px;
             padding: 5px 15px;
+            font-size: 20px;
         }
 
 
@@ -69,7 +71,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 30vw;
+            width: 20em;
             font-family: 'Quicksand';
             color: #452e28;
             text-align: center;
@@ -85,9 +87,8 @@
         }
         .center h1{
             font-family: 'Arima Madurai';
-            font-size: 50px;
+            font-size: 4em;
             font-weight: lighter;
-            background: ;
             margin: 8px 0px ;
             margin-bottom: 0;
         }
@@ -98,13 +99,14 @@
 
         }
         .may{
-            box-sizing: content-box;
             background: white;
-            letter-spacing: 1vw;
-            line-height: 0px;
+            letter-spacing: 1em;
+            line-height: 10px;
             padding: 0px 20px;
             border-radius: 30px;
             text-align: center;
+            width: 18em;
+            
             
             
         }
@@ -119,6 +121,7 @@
             border-radius: 15px;
             padding: 10px 30px;
             margin-top: 20px;
+            font-size: 20px;
 
         }
 
@@ -135,14 +138,16 @@
         }
 
         .imagen img{
-            width: 500px;
+            width: 30vw;
 
 
         }
       
       
-        @media screen {
-            
+        @media screen and (max-width: 700px) {
+            .imagen {
+                display: none;
+            }
         }
 
       
@@ -170,17 +175,16 @@
 
             <div class="bar">
 
-                <p> Home </p>
-                
+                <p> Inicio </p>
                 <p> Event </p>
-                <p> About </p>
-                <p> Membership </p>
+                <p> Acerca </p>
+            
 
             </div>
 
             <div class="sign_up">
 
-                <button class="sign_up1"> Sign Up</button>
+                <button class="sign_up1"> Ingresar</button>
 
             </div>
         </div>
@@ -190,18 +194,19 @@
             <div class="center">
 
                 <div class="may">
-                <h3 style="text-align: center;"> 14TH MAY</h3>
+                <h3 style="text-align: center;"> 14 DE MAYO</h3>
                 </div>
 
                 <h1> Mother's Day</h1>
 
                 <div class="linea"></div>
+                <br>
 
 
 
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem nesciunt expedita quos beatae labore nemo veritatis </p>
 
-                <button> Learn More</button>
+                <button> Ver Mas</button>
 
             </div>
 
