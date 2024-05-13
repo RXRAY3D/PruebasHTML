@@ -22,8 +22,6 @@
             
         }
 
-    
-
         .head1{
             position: relative;
             display: flex;
@@ -32,6 +30,7 @@
             align-items: baseline;
             margin: auto;
             align-items: center;
+            z-index: 1;
 
         }
         
@@ -65,6 +64,14 @@
 
 
         
+        .cont-center{
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            
+        }
         
 
         .center{
@@ -78,13 +85,6 @@
 
         }
 
-        .cont-center{
-            display: flex;
-            height: 90vh;
-            justify-content: center;
-            align-items: center;
-            
-        }
         .center h1{
             font-family: 'Arima Madurai';
             font-size: 4em;
@@ -127,6 +127,7 @@
 
         .imagen{
             position: fixed;
+            z-index: 0;
             margin: auto auto;
             width: 100vw;
             height: 100vh;
@@ -142,6 +143,152 @@
 
 
         }
+        .vent_log{
+            height: 100vh;
+            background-color: lavender;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .sign_log{
+            background-color: white;
+            width: 400px;
+            font-family: 'Quicksand';
+            padding: 50px;
+            border-radius: 20px; 
+            
+        }
+
+        .formlog input,button {
+            font-size: 17px;
+
+        }
+
+        .button1{
+            background-color: white;
+            color: black;
+            margin: 12px 0px;
+            padding: 20px 0px;
+            border: 1px solid #faabcb ;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            width: 49%;
+        }
+
+        input[type=text1]{
+            width: 100%;
+            padding: 20px 20px;
+            margin: 12px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+            font-family: 'Quicksand';
+            font-weight: 500;
+        }
+
+        input[type=password]{
+            width: 100%;
+            padding: 20px 20px;
+            margin: 12px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+            font-family: 'Quicksand';
+            font-weight: 500;
+        }
+
+
+        input[type=submit1] {
+            background-color: #faabcb;
+            color: white;
+            margin: 12px 0px;
+            padding: 20px 0px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            float: left;
+            width: 45%;
+
+        }
+
+        
+        input[type=submit2] {
+            background-color: #faabcb;
+            color: white;
+            margin: 12px 0px;
+            padding: 20px 0px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            float: right;
+            width: 45%;
+
+        }
+
+
+        .footer{
+            height: 100vh;
+            background-color: #faabcb;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .form_contac{
+            background-color: white;
+            width: 600px;
+            
+            font-family: 'Quicksand';
+            padding: 50px;
+            border-radius: 20px; 
+        }
+
+        form p{
+            text-align: left;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+
+        input[type=text]{
+            width: 100%;
+            padding: 20px 20px;
+            margin: 12px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Quicksand';
+            font-weight: 500;
+
+
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #faabcb;
+            color: white;
+            padding: 20px 20px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+
+
       
       
         @media screen and (max-width: 700px) {
@@ -150,28 +297,21 @@
             }
         }
 
-      
 
-       
     </style>
-
 
 </head>
 <body>
     
     <head>
-        
         <div class="imagen">
-
 
             <img class="image1" src="imagenes/Floral.png" alt="">
             <img class="image2" src="imagenes/Vector Smart Object 2.png" alt="" >
            
-
         </div>
 
         <div class="head1">
-
 
             <div class="bar">
 
@@ -179,7 +319,6 @@
                 <p> Event </p>
                 <p> Acerca </p>
             
-
             </div>
 
             <div class="sign_up">
@@ -202,8 +341,6 @@
                 <div class="linea"></div>
                 <br>
 
-
-
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem nesciunt expedita quos beatae labore nemo veritatis </p>
 
                 <button> Ver Mas</button>
@@ -212,11 +349,56 @@
 
         </div>
 
+        <div class="vent_log">
+
+            <div class="sign_log">
+                <form action="" class="formlog">
+
+                    <h1 style="font-size: 40px; margin-top: 0px;">Ingresar</h1>
+                    <p style="text-align: right; font-size: smaller;">No tienes una cuenta? <span style="color: #faabcb;"><b>Crea una</b></span></p>
+                    <button class="button1"> Google <span>logo</span></button>
+                    <button class="button1"> Facebook <span>Face</span></button>
+                    <p style="text-align: center;">OR</p>
+                    <input type="text1" placeholder="Usuario *">
+                    <input type="password" placeholder="Contraseña *">
+                    <input type="submit1" value="Recuperar">
+                    <input type="submit2" value="Iniciar sesion">
 
 
-        
+
+                </form>
+
+
+
+            </div>
+
+        </div>
 
     </head>
+    
+    <footer>
+        <div class="footer">
+            <div class="form_contac">
+                <form action="/action_page.php">
+
+                    <h1 style="font-size: 50px; color: #452e28;">Contact</h1>
+
+                    <p> * Necesario </p>
+                    
+                    <input type="text" placeholder="Nombre *">
+
+                    <input type="text" placeholder="Email *">
+
+                    <input type="text" placeholder="Numero telefonico *">
+
+                    <input type="text" placeholder="Mensaje *">
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </footer>
 
 
 
